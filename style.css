@@ -39,12 +39,20 @@ h3 {
 }
 
 p {
+  display: block;
   background: var(--secondary-color);
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+img {
+  vertical-align: middle;
 }
 @media (max-width: 576px) {
   h1 {
@@ -138,9 +146,4 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-}
-.mt-5 {
-  display: block;
-  margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
 }
