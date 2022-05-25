@@ -46,6 +46,26 @@ p {
   line-height: 1.5;
   text-align: center;
 }
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .d-sm-block {
+    display: block !important;
+  }
+  .d-none {
+    display: none !important;
+  }
+  .primary-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+}
 
 .navbar > .container {
   display: flex;
@@ -109,4 +129,13 @@ p {
 }
 .about-title {
   margin-top: 40px;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
 }
